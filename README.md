@@ -122,12 +122,6 @@ mvn spring-boot:run
 Authorization: Bearer &lt;tu_token&gt;
   </pre>
 
-  <h2>📑 Documentación con Swagger</h2>
-  <p>
-    Una vez levantado el proyecto, la documentación de la API estará disponible en:
-    <a href="http://localhost:8080/swagger-ui.html">http://localhost:8080/swagger-ui.html</a>
-  </p>
-
   <h2>⚠️ Notas importantes</h2>
   <ul>
     <li>El archivo <code>clave.txt</code> contiene usuarios de prueba con sus credenciales para testear la API.</li>
