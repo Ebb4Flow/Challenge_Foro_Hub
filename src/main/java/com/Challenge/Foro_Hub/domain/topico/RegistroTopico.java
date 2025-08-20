@@ -1,11 +1,12 @@
-package com.Challenge.Foro_Hub.respuesta;
+package com.Challenge.Foro_Hub.domain.topico;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
-public record registroRespuesta(
+public record RegistroTopico(
+        @NotBlank String titulo,
         @NotBlank String mensaje,
         @NotNull Long autorId,
-        @NotNull Long topicoId
+        @NotBlank String curso
 ) {
 }

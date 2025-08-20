@@ -1,7 +1,7 @@
-package com.Challenge.Foro_Hub.topico;
+package com.Challenge.Foro_Hub.domain.topico;
 
-import com.Challenge.Foro_Hub.respuesta.Respuesta;
-import com.Challenge.Foro_Hub.usuario.Usuario;
+import com.Challenge.Foro_Hub.domain.respuesta.Respuesta;
+import com.Challenge.Foro_Hub.domain.usuario.Usuario;
 import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDateTime;
@@ -40,7 +40,7 @@ public class Topico {
     @OneToMany(mappedBy = "topico", cascade = CascadeType.ALL)
     private List<Respuesta> respuestas;
 
-    public Topico(registroTopico datos, Usuario autor) {
+    public Topico(RegistroTopico datos, Usuario autor) {
         this.titulo = datos.titulo();
         this.mensaje = datos.mensaje();
         this.fechaCreacion = LocalDateTime.now();
@@ -49,7 +49,7 @@ public class Topico {
         this.curso = datos.curso();
     }
 
-    public void actualizar(ActualzarTopico datos) {
+    public void actualizar(ActualizarTopico datos) {
         if (datos.titulo() != null) {
             this.titulo = datos.titulo();
         }
@@ -63,4 +63,6 @@ public class Topico {
             this.curso = datos.curso();
         }
     }
+
+
 }

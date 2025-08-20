@@ -1,6 +1,5 @@
-package com.Challenge.Foro_Hub.usuario;
+package com.Challenge.Foro_Hub.domain.usuario;
 
-import com.Challenge.Foro_Hub.perfil.registroPerfil;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

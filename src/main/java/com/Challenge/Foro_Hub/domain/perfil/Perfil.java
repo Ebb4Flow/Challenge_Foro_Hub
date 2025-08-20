@@ -1,8 +1,9 @@
-package com.Challenge.Foro_Hub.perfil;
+package com.Challenge.Foro_Hub.domain.perfil;
 
 import jakarta.persistence.*;
 import lombok.*;
 
+//Mapeado solamente por su relación
 @Table(name = "perfiles")
 @Entity(name = "Perfil")
 @Getter

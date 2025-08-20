@@ -1,0 +1,16 @@
+user: Andres Matthies
+clave: 12345segura
+
+user: Maria Lopez
+clave: claveSecreta
+
+user: Ramon Perez
+clave: clave1
+
+user: Paz Torres
+clave: pass2025
+
+Andres Matthies	andres@example.com
+Maria Lopez	maria@example.com
+Juan Perez	juan@example.com
+Carla Torres	carla@example.com
